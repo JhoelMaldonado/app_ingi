@@ -1,0 +1,13 @@
+{% load crispy_forms_tags %}
+<h3>Login</h3>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="card mx-auto" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"> Ingrese credenciales</h5>
+    {{form | crispy}}
+    <button type="submit"> Iniciar sesion </button>
+</div>
+</div>
+</form>
